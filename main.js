@@ -11,28 +11,27 @@ new Audio("./sounds/9.wav")];
 
 const music = document.getElementById("music");
 
-function onClickDo(note){  
-    note.pause();
-    note.currentTime = 0;
-    note.play();  
+function click(bit){  
+    bit.pause();
+    bit.currentTime = 0,5;
+    bit.play();  
   }
   
   document.onkeydown = function(e){
     const index = 49;
     for(let i = 0; i <= musicArr.length; i++){
       switch(e.keyCode){
-        case index + i: onClickDo(musicArr[i]);
-        piano.children[i].classList.add("active");
+        case index + i: click(musicArr[i]);
+        drum.children[i].classList.add("active");
         break;
       }
     }
   }
-  
   document.onkeyup = function(e){
     const index = 49;
     for(let i = 0; i <= musicArr.length; i++){
       switch(e.keyCode){
-        case index + i: piano.children[i].classList.remove("active");
+        case index + i: drum.children[i].classList.remove("active");
         break;
       }
     }

@@ -3,7 +3,7 @@ html {
     font-size: 10px;
     background-size: cover;
 }
-.music {
+.music1 {
     display: flex;
   flex: 1;
   min-height: 10vh;
@@ -38,7 +38,7 @@ html {
         height: 50px;
         width: 50;
       }
-      kbd {
+      span {
         display: block;
         font-size: 4rem;
       }
